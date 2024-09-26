@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import ListaVagas from './containers/ListaVagas'
 
 import './global.css'
+import Teste from './Teste'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="container">
         <ListaVagas />
       </div>
+      <Teste />
     </>
   )
 }
