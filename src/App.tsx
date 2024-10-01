@@ -1,9 +1,7 @@
 import Header from './components/Cabecalho'
-import Hero from './components/Hero'
+import { Hero } from './components/Hero/HeroStyled'
 import ListaVagas from './containers/ListaVagas'
 import EstiloGlobal from './styles'
-
-import Teste from './Teste'
 
 function App() {
   return (
@@ -14,7 +12,6 @@ function App() {
       <div className="container">
         <ListaVagas />
       </div>
-      <Teste />
     </>
   )
 }
