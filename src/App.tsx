@@ -1,18 +1,22 @@
-import Header from './components/Cabecalho'
-import { Hero } from './components/Hero/HeroStyled'
+import { ThemeProvider } from 'styled-components'
+import Hero from './components/Hero'
 import ListaVagas from './containers/ListaVagas'
-import EstiloGlobal from './styles'
+
+import themeOrigin from './containers/theme/origin'
+
+import Cabecalho from './components/Cabecalho'
+import EstiloGlobal, { Container } from './style'
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={themeOrigin}>
       <EstiloGlobal />
-      <Header />
+      <Cabecalho />
       <Hero />
-      <div className="container">
+      <Container>
         <ListaVagas />
-      </div>
-    </>
+      </Container>
+    </ThemeProvider>
   )
 }
 

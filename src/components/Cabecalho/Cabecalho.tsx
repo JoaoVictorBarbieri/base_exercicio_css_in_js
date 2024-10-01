@@ -1,8 +1,0 @@
-import styled from 'styled-components'
-
-export const CabecalhoStyled = styled.header`
-  background-color: var(--cor-secundaria)
-  color: ${{ theme }} => theme.corSecundaria;
-  text-align: center;
-  padding: 24px 0;
-`
