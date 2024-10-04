@@ -1,4 +1,4 @@
-import { LinkAnuncio, TitleAnuncioDaVaga, VagasAnuncio } from './Vaga'
+import { LinkAnuncio, TitleAnuncioDaVaga, VagasAnuncio } from './styles'
 
 type Props = {
   titulo: string
@@ -22,7 +22,7 @@ const Vaga = (props: Props) => (
       </li>
       <li>Requisitos: {props.requisitos.join(', ')}</li>
     </ul>
-    <LinkAnuncio href="#">Ver detalhes e candidatar-se </LinkAnuncio>
+    <LinkAnuncio href="#">Ver detalhes e candidatar-se</LinkAnuncio>
   </VagasAnuncio>
 )
 
